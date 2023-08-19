@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Reserva de viagem</title>
+    <style>
+        form{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            align-items: starto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Informações</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="nome">    
+        </fieldset>
+        <fieldset>
+            <Legend>
+                Data
+            </Legend>
+            <label for="DataIda">Data de ida</label>
+            <input type="date" name="DataIda" >
+            <label for="DataVolta" name="DataVolta">Data de volta</label>
+            <input type="date" name="DataVolta" >
+            <label for="nPessoas">Quantidade de pessoas</label>
+            <input type="number" name="nPessoas" id="">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Quais serviços deseja</legend>
+           <select>
+            <option value="Passagens">Compra de Passagens</option>
+            <option value="Hospedagem">Reserva de hospedagem</option>
+            <option value="AluguelVeiculo">Aluguél de veículo</option>
+           </select>
+        </fieldset>
+
+        <fieldset>
+            <Legend>Deixe alguma observação</Legend>
+            <textarea name=""
+              cols="20" rows="10"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
