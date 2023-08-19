@@ -10,9 +10,11 @@
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
+            row-gap: 1rem;
         }
 
         fieldset{
+            row-gap: 1rem;
             display: flex;
             flex-direction: column;
             align-items: starto;
@@ -22,7 +24,7 @@
     </style>
 </head>
 <body>
-    <form action="">
+    <form action="get">
         <fieldset>
             <legend>Informações</legend>
             <label for="nome">Nome</label>
@@ -56,6 +58,7 @@
             <textarea name=""
               cols="20" rows="10"></textarea>
         </fieldset>
+        <input type="submit">
     </form>
 </body>
 </html>
